@@ -45,7 +45,7 @@ for period in krewes.values():
 for name in peeps:
     data[name] = 0
 
-for i in range(10000):
+for i in range(100000):
     data[randomPerson()] += 1
 
 print(data)

@@ -4,13 +4,13 @@ Duckies: Catbat, Alfred
 Softdev
 05_bitstream
 2022-09-29
-time spent: 45 min
+time spent: 0.9
 DISCO:
-  - We can use the .splt("str") method to split a string into a list
+  - We can use the .split("str") method to split a string into a list
   - TypeError: 'dict_keys' object is not subscriptable
-    - We must
 QCC:
   - Will a student always have a Ducky?
+  - Will the file end with '@@@' all of the time?
 OPS SUMMARY:
   - We read entire file as 1 string
   - We first split the string into a list of tuples
@@ -65,14 +65,16 @@ for i in list2:
 
 print(big_dict)
 
-def randomSoftDev():
+def random_soft_dev():
     periods=list(big_dict.keys())
     #print(periods)
     rand_period=rng.choice(periods)
     #print(rand_period)
+    print(big_dict[rand_period][0])
     rand_index=int((rng.random()*len(big_dict[rand_period][0])))
     #print(rand_index)
-    return big_dict[rand_period][0][rand_index] + " from period " + rand_period + " with ducky " + big_dict[rand_period][1][rand_index] + " are the chosen duo!!!"
+    return big_dict[rand_period][0][rand_index] + " from period " + \
+           rand_period + " with ducky " + big_dict[rand_period][1][rand_index] + " are the chosen duo!!!"
 
 for i in range(10):
-    print(randomSoftDev())
+    print(random_soft_dev())
