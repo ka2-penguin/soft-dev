@@ -11,7 +11,7 @@ app = Flask(__name__) #create instance of class Flask
 def hello_world():
     return "No hablo queso!"
 
-app.run()
+app.run()     # continuously makes localhost avalible to app
 
 '''
 - '__main__' won't be printed in terminal
