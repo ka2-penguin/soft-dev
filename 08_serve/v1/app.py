@@ -1,3 +1,11 @@
+'''
+VSM: Verit, Sebastian, Maya
+SoftDev
+K08 -- introduction to Flask
+2022-10-06
+time spent: 0.3
+'''
+
 # Clyde 'Thluffy' Sinclair
 # SoftDev
 # Oct 2022

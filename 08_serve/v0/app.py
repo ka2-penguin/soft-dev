@@ -1,10 +1,14 @@
 '''
-<Frist> <Lsat>
+VSM: Verit, Sebastian, Maya
 SoftDev
-K<nn> -- <Title/Topic/Summary... (Aim for concision, brevity, CLARITY. Write to your future self...)>
-<yyyy>-<mm>-<dd>
-time spent: <elapsed time in hours, rounded to nearest tenth>
+K08 -- introduction to Flask
+2022-10-06
+time spent: 0.2
 '''
+
+# Clyde 'Thluffy' Sinclair
+# SoftDev
+# Oct 2022
 
 from flask import Flask
 
@@ -16,7 +20,7 @@ app = Flask(__name__) # assigns new instance of Flask to app
 
 # function runs regardless of its name
 def hello_world():
-    print('hello')#__name__) # why does this print '__main__'?
+    print(__name__) #hello) # why does this print '__main__'?
     return 'hi'#"No hablo queso!"  # what is written in web browser
 
 app.run()  # Flask app runs
@@ -26,4 +30,3 @@ app.run()  # Flask app runs
 - whatever is printed in the function prints in the terminal
 - the string in @app.route() needs to follow the localhost url
 '''
-                
