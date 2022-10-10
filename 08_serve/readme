@@ -1,0 +1,20 @@
+VSM: Verit, Sebastian, Maya
+
+v0
+- whatever is returned in hello_world is displayed on web browser
+- whatever is printed in the function prints in the terminal
+- the string in @app.route() needs to follow the localhost url
+
+v1
+- '__main__' won't be printed in terminal
+- same as v0 otherwise
+
+v2
+- __name__ is a special variable that is already assigned
+
+v3
+- debug being True allows editing the function without having to physically rerun the program(only save)
+- debug being False helps make sure the website isn't accidentally altered
+
+v4
+- if you print __name__ in app.py and import it, it would print out '__app__'
