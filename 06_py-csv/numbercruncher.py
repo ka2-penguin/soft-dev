@@ -55,7 +55,7 @@ for row in data:
 print(dict_data)
 
 def random_occupation():
-    return rg.choices(list(dict_data.keys()),\      # Returns a list len 1
+    return rg.choices(list(dict_data.keys()),\
            weights=list(dict_data.values()))[0]
 
 #tester = {}
