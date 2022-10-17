@@ -1,0 +1,63 @@
+two types of requests: one being a request for the box to be displayed (example) 
+such as a text submition box. Also a request for an answer to be sent in said box.
+
+
+
+What is printed in the terminal when accessing root:
+***DIAG: this Flask obj ***
+<Flask 'app'>
+***DIAG: request obj ***
+<Request 'http://127.0.0.1:5000/' [GET]>
+***DIAG: request.args ***
+ImmutableMultiDict([])
+***DIAG: request.headers ***
+Host: 127.0.0.1:5000
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:106.0) Gecko/20100101 Firefox/106.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+
+What is printed in the terminal after entering a username and clicking submit query:
+***DIAG: this Flask obj ***
+<Flask 'app'>
+***DIAG: request obj ***
+<Request 'http://127.0.0.1:5000/' [GET]>
+***DIAG: request.args ***
+ImmutableMultiDict([('username', '10'), ('sub1', 'Submit Query')])
+***DIAG: request.headers ***
+Host: 127.0.0.1:5000
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:106.0) Gecko/20100101 Firefox/106.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+
+Notes: Whenever something is submitted in the box, "Waaaa hooo HAAAH" is displayed on a new
+screen. Also, the url changes from http://127.0.0.1:5000/ -> http://127.0.0.1:5000/auth?username=a&sub1=Submit
+Username= phrase submitted in the box. 
+
+When print(request.args['username']) is uncommented we get a BadRequestKeyError. (From disp_loginpage())
+When print(request.args['username']) is uncommented the site runs fine. (From authenticate()) Also, 
+the argument submitted now appears under the 2nd uncommented print statement. 
+Even when you uncomment methods=['GET', 'POST'] and put a comma inbetween "/auth", nothing changes and it still runs.
+(Works for both functions)
+
+Object = Link, and in this case you're getting the link. 
+Arguments = Whatever is submitted for username and whether or not you physically press the submit button.
+Headers = Host IP, what website is used, and info about computer. 
+
+
+
+
+
