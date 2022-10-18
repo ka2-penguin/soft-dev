@@ -63,7 +63,7 @@ def authenticate():
     print(request.headers)
     return render_template('response.html',\
     username=request.form['username'],\
-    request_type=request)
+    request_type=request.method)
     return "Waaaa hooo HAAAH"  #response to a form submission
 
 
