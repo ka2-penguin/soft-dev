@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+Metamorphosis: Eric, Yuki, Maya
+Softdev
+k12 -- GET vs. POST, displaying form responses
+2022-10-17
+time spent: 0.8
+
+     simple demo of HTML forms via Flask
+
+     trioTASK:
+     If any member of team has forms experience, let their know-how OSMOTE.
+     If no one does, seek external assistance.
+
+     PROTIP: Revisit code from intro if you have it.
+     Peruse this code together and discuss how it should work,
+       in conjunction with the back end apparatus.
+ -->
+
+
+<html>
+
+  <head>
+    <title> LOGIN PAGE </title>
+  </head>
+
+  <body>
+    <h3> Metamorphosis: Eric, Yuki, Maya</h3>
+    <!-- <h1>
+      Welcome, Travelers of the Intertoobz!
+    </h1> -->
+
+
+    <h1>
+      Hello, {{ username }}.
+    </h1>
+
+    <p> Request method: {{ request_type }} </p>
+    <h2> GET vs. POST</h2>
+
+    <h3>GET</h3>
+    <ul>
+      <li> User can see form reponses in the link. </li>
+      <li> Access inputs by using request.args </li>
+    </ul>
+
+    <h3> POST </h3>
+    <ul>
+      <li> User cannot see form reponses in the link. </li>
+      <li> Access inputs by using request.form. </li>
+      <li> Reloading the site right after submitting the form prompts the web browser to warn the user </li>
+    </ul>
+    <br>
+  </body>
+
+</html>
