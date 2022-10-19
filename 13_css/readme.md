@@ -1,8 +1,15 @@
-Metamorphosis: Eric, Yuki, Maya\
-Softdev\
-k13 -- \
-2022-10-17\
-time spent: 0.8\
+Metamorphosis: Eric Sohel, Yuki Feng, Maya Mori, Aleksandra Shifrina\
+SoftDev\
+k13 -- intro to CSS\
+2022-10-18\
+time spent: 1.2
+
 DISCO:
+* ```color``` - text color
+* ```background``` - color of the box surrounding element
+* ```display: flex``` - allows multiple elements to be side-by-side
+* ```text-align``` - works like align in word processors
+* You can nest ```div```
 
 QCC:
+* Why does ```width``` for ```navbar``` need to be an absurdly high number (```700px```) to look right?
