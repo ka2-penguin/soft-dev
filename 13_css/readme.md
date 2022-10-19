@@ -2,7 +2,7 @@ Metamorphosis: Eric Sohel, Yuki Feng, Maya Mori, Aleksandra Shifrina\
 SoftDev\
 k13 -- intro to CSS\
 2022-10-18\
-time spent: 1.2
+time spent: 1.5
 
 DISCO:
 * ```color``` - text color

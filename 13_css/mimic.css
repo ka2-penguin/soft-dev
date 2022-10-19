@@ -1,0 +1,47 @@
+/* Metamorphosis: Eric Sohel, Yuki Feng, Maya Mori, Aleksandra Shifrina
+SoftDev
+k13 -- intro to CSS
+2022-10-18
+time spent: 1.5 */
+
+html {
+  font-family: sans-serif;
+  background: DimGrey;
+}
+
+h1 {
+  text-align: center;
+  background: silver;
+  color: white;
+}
+
+body {
+  background: grey;
+}
+
+.main-text {
+  display: flex;
+}
+
+.navbar {
+  padding: 20px;
+  width: 700px;             /* why does this value need to be so large? */
+  margin-right: 50px;
+}
+
+/* refers to the <p> tag in "navbar" class */
+.navbar p{
+  color: white;
+}
+
+.main-foo {
+  margin: 10px;
+}
+
+.footer {
+  background: #505050;
+  color: grey;
+  text-align: right;
+  padding: 1px;
+  padding-right: 10px;        /* moves text away from the right edge */
+}
