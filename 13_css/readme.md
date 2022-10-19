@@ -10,6 +10,7 @@ DISCO:
 * ```display: flex``` - allows multiple elements to be side-by-side
 * ```text-align``` - works like align in word processors
 * You can nest ```div```
+* Can style ```<html>```
 
 QCC:
 * Why does ```width``` for ```navbar``` need to be an absurdly high number (```700px```) to look right?
