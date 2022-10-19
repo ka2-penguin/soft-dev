@@ -1,4 +1,4 @@
-Metamorphosis: Eric, Yuki, Maya\
+Metamorphosis: Eric Sohel, Yuki Feng, Maya Mori, Aleksandra Shifrina\
 Softdev\
 k12 -- GET vs. POST, displaying form responses\
 2022-10-17\
