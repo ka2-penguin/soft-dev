@@ -14,7 +14,7 @@ DB_FILE="discobandit.db"
 
 db = sqlite3.connect(DB_FILE) #open if file exists, otherwise create
 c = db.cursor()               #facilitate db ops -- you will use cursor to trigger db events
-
+# c.execute('')
 #==========================================================
 # with open('students.csv') as f:
 #     students_dict = csv.DictReader(f)
@@ -25,8 +25,8 @@ c = db.cursor()               #facilitate db ops -- you will use cursor to trigg
 
 #command = "create table students(name text, age int, id int);"
 
-c.execute('delete from students;')
-c.execute('delete from courses;')
+c.execute('create table if not exists students (name text, age int, id int);')
+c.execute('create table if not exists courses (code text, mark int, id int);')
 
 with open('students.csv') as f:
     students_dict = csv.DictReader(f)
