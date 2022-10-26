@@ -1,7 +1,10 @@
-#Clyde "Thluffy" Sinclair
-#SoftDev  
-#skeleton/stub :: SQLITE3 BASICS
-#Oct 2022
+'''
+Metamorphosis: Eric Sohel, Yuki Feng, Maya Mori, Aleksandra Shifrina
+SoftDev
+k18 -- sqlite in Python
+2022-10-25
+time spent: 0.8 
+'''
 
 import sqlite3   #enable control of an sqlite database
 import csv       #facilitate CSV I/O
@@ -21,6 +24,10 @@ c = db.cursor()               #facilitate db ops -- you will use cursor to trigg
 # print(students_dict['name'])
 
 #command = "create table students(name text, age int, id int);"
+
+c.execute('delete from students;')
+c.execute('delete from courses;')
+
 with open('students.csv') as f:
     students_dict = csv.DictReader(f)
     for row in students_dict:
