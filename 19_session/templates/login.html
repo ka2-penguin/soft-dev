@@ -1,3 +1,11 @@
+<!-- 
+Metamorphosis: Eric Sohel, Yuki Feng, Maya Mori, Aleksandra Shifrina
+Softdev
+k19 -- sessions in Flask
+2022-11-04
+time spent: 2.0
+ -->
+ 
 <!DOCTYPE html>
 <html>
 
@@ -6,29 +14,25 @@
   </head>
 
   <body>
-    <h3> Metamorphosis: Eric, Yuki, Maya</h3>
-    <h1>
-      Welcome, Travelers of the Intertoobz!
-    </h1>
+    <h1> Metamorphosis: Eric, Yuki, Maya, Sasha</h1>
+
+    <h2>
+      Enter your username and password below to proceed.
+    </h2>
+    {% if has_error %}
+    <h2> Error!</h2>
+    <h2> {{ error }} </h2>
+    {% endif %}
 
 
-    <h3>
-      Enter your username below to proceed.
-    </h3>
     <form action="/", method = "POST">
+      <label for="username"> Username: </label>
       <input type="text" name="username">
-        <!-- {%if good_password != password %}
-        <h2> ERROR!</h2>
-        {% endif %} -->
-        {% if has_error %}
-          {% if error == 'username'%}
-          <h2> Bad username! </h2>
-          {% elif error == 'password'%}
-          <h2> Wrong password!</h2>
-          {% endif %}
-        {% endif %}
       <br>
+      <label for="username"> Password: </label>
       <input type="text" name="password">
+      <br>
+      <br>
       <input type="submit" name="sub1">
     </form>
     <br>

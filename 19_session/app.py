@@ -1,9 +1,9 @@
 '''
 Metamorphosis: Eric Sohel, Yuki Feng, Maya Mori, Aleksandra Shifrina
 Softdev
-k12 -- GET vs. POST, displaying form responses
-2022-10-17
-time spent: 1.2
+k19 -- sessions in Flask
+2022-11-04
+time spent: 2.0
 '''
 
 from flask import Flask             #facilitate flask webserving
@@ -14,39 +14,37 @@ from flask import session
 
 app = Flask(__name__)
 
-# Set the secret key to some random bytes. Keep this really secret!
 app.secret_key = b'foo'
 username = 'bob'
 password = 'mob123'
 
+# displaying the homepage
 @app.route('/', methods=['GET'])
 def index():
     print(session)
     # print(request.cookies)
     print(request.cookies.get('username'))
-    # if request.cookies.get('username') is not None:
     if 'username' in session:
         return render_template('response.html',username=session["username"])
     return render_template('login.html',has_error=False)
-    # session.pop('username', None)
-    # if 'username' in session:
-    #     return render_template('response.html',username=session["username"])
-    # return render_template('login.html',good_password=password)
 
+# if user tried to login in
 @app.route('/', methods=['POST'])
 def login():
     print('login function')
+
+    # if everything matches
     if request.form['username'] == username and request.form['password'] == password:
+        # add session
         session['username'] = request.form['username']
         return render_template('response.html',username=session["username"])
-    # if request.method == 'POST':
 
-    error_type = ''
+    # handle cases when username/password in wrong
+    error_type = ''     # error message
     if request.form['username'] != username:
-        error_type='username'
+        error_type='Username not found'
     elif request.form['password'] != password:
-        error_type = 'password'
-
+        error_type = 'Wrong password'
     return render_template('login.html',has_error=True,error=error_type)
     # session['username'] = request.form['username']
 
@@ -57,7 +55,6 @@ def logout():
     return render_template('login.html')
 
 
-if __name__ == "__main__": #false if this file imported as module
-    #enable debugging, auto-restarting of server when this file is modified
+if __name__ == "__main__": 
     app.debug = True
     app.run()
