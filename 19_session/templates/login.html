@@ -15,10 +15,17 @@
     <h3>
       Enter your username below to proceed.
     </h3>
-    <form action="/login", method = "POST">
+    <form action="/", method = "POST">
       <input type="text" name="username">
-        {%if good_password != password %}
+        <!-- {%if good_password != password %}
         <h2> ERROR!</h2>
+        {% endif %} -->
+        {% if has_error %}
+          {% if error == 'username'%}
+          <h2> Bad username! </h2>
+          {% elif error == 'password'%}
+          <h2> Wrong password!</h2>
+          {% endif %}
         {% endif %}
       <br>
       <input type="text" name="password">

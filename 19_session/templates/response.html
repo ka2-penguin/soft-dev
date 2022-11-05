@@ -6,12 +6,22 @@
   </head>
 
   <body>
-    <h3> Yay</h3>
+    <h3> Yay {{ username }}</h3>
     <h1>
       Welcome, Travelers of the Intertoobz!
     </h1>
 
     <br>
+
+    <form action="/logout", method = "POST">
+      <!-- <input type="text" name="username">
+        {%if good_password != password %}
+        <h2> ERROR!</h2>
+        {% endif %}
+      <br>
+      <input type="text" name="password"> -->
+      <input type="submit" name="log out">
+    </form>
   </body>
 
 </html>
