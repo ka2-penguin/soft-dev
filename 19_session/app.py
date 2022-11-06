@@ -9,12 +9,13 @@ time spent: 2.0
 from flask import Flask             #facilitate flask webserving
 from flask import render_template 
 from flask import request
-
 from flask import session
+
+import os
 
 app = Flask(__name__)
 
-app.secret_key = b'foo'
+app.secret_key = os.urandom(32)
 username = 'bob'
 password = 'mob123'
 
