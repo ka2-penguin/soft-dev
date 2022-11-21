@@ -1,0 +1,6 @@
+DISCO:
+- requests.get can send get requests 
+- json() can parse that into a Python dictionary
+
+Q/C/C:
+- Is there a way to send an API request in Flask?
