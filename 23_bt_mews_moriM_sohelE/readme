@@ -1,0 +1,17 @@
+DISCOs:
+- Text color changes depending the color of an element
+- Grid sizes change depending on "#" in "col-#"
+- Bootstrap has mulitple colors built in
+- table-striped alternates row colors
+
+Some classes:
+- btn: button
+- shadow
+- navbr
+- border
+- table
+- container
+- text-center
+
+Q/C/C:
+- Does the order of classes matter? If so when?
