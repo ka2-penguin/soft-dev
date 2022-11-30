@@ -1,10 +1,18 @@
 DISCO:
-- 
+- Can use 'button' class to make '<a>'' be a button and a link
+- 'callout' class creates a box with a separate background with the body
+- Number after 'large-' corresponds to the size of the callout box 
+(1 for smallest and incrasing in size)
+- 'text-center' class centers the div
 
 QCC:
+- How do the grid-padding-x and grid-padding-y classes work?
 
 q0:
 1
 
 q0b:
 get.foundation
+
+q1:
+Bootstrap because
