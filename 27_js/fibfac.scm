@@ -1,5 +1,5 @@
-;Team Phantom Tollbooth :: Clyde Sinclair, Fierce Dragon
-;SoftDev pd0
+;Team Wandering Majestic Merciful Mice:: Maya Mori, Wilson Mach
+;SoftDev pd2
 ;K27 -- Basic functions in JavaScript
 ;2023-04-03t
 
