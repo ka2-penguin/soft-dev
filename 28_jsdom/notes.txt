@@ -1,0 +1,7 @@
+DISCO
+* single and double quotes in JS
+* console.log() to print stuff
+* similar for loop to Java
+
+QCC:
+* 
