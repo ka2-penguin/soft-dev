@@ -1,23 +1,3 @@
-/*
-   your PPTASK:
-   
-   Test drive each bit of code in this file,
-    and insert comments galore, indicating anything
-     you discover,
-    	have questions about,
-    		or otherwise deem notable.
-    		
-    		Write with your future self or teammates in mind.
-    		
-    		If you find yourself falling out of flow mode, consult 
-    		other teams
-    		MDN
-
-   A few comments have been pre-filled for you...
-   
-   (delete this block comment once you are done)
-*/
-
 // Team Wandering Majestic Merciful Mice:: Maya M, Wilson
 // SoftDev pd2
 // K28 -- Getting more comfortable with the dev console and the DOM
@@ -60,13 +40,15 @@ var addItem = function(text) {
   list.appendChild(newitem);
 };
 
-
+// collects all li elements regardless of which list it's in
 var removeItem = function(n) {
   var listitems = document.getElementsByTagName('li');
   listitems[n].remove();
 };
 
-// only tchanges the 1st item in the list red
+// only colors the 1st and last item in the list red
+// if the li element doesn't belong to any class, it turns red
+// doesn't add red to elements that already has red
 var red = function() {
   var items = document.getElementsByTagName("li");
   for(var i = 0; i < items.length; i++) {
@@ -75,6 +57,7 @@ var red = function() {
 };
 
 
+// doesn't add any colors to elements that already has that color
 var stripe = function() {
   var items = document.getElementsByTagName("li");
   for(var i = 0; i < items.length; i++) {
@@ -86,10 +69,37 @@ var stripe = function() {
   }
 };
 
-//insert your implementations here for...
-// FIB
-// FAC
-// GCD
+function fact(n){
+  if(n == 0){
+      return 1;
+  } 
+
+  return n * fact(n-1);
+}
+
+function fib(n) {
+  if(n == 0){
+      return 0;
+  }
+
+  if (n == 1){
+      return 1;
+  }
+
+  return fib(n-1) + fib(n-2);    
+}
+
+function gcd(a,b) {
+  if (a == 0) {
+    return b;
+  } else if (b == 0) {
+    return a;
+  } else {
+    return gcd(Math.min(a,b), Math.max(a,b) % Math.min(a,b));
+  }
+}
+
+document.write("5! = "+fact(5));
 
 // In addition to the style shown above,
 //  you are encouraged to test drive the "arrow function syntax" as shown below.
