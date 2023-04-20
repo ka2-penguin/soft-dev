@@ -1,0 +1,11 @@
+Team JM:: Maya M, Joseph
+SoftDev pd2
+K29 -- add buttons and bind them to functions
+2023-04-20w
+
+
+DISCO
+* comments in HTML show up as larger, italic text in the DOM visualizer
+
+QCC:
+* How would you get the user input and use that as a parameter to a function and display the result?
