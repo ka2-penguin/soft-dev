@@ -1,0 +1,15 @@
+Team Wandering Majestic Merciful Mice:: Maya M., Wilson
+SoftDev pd2
+K30 -- canvas based JS drawing
+2023-04-24m
+HTML file for JavaScript canvas work
+
+
+
+
+DISCO
+- use offsetX and offsetY instead of mouseX and mouseY to draw shapes centered
+  properly
+- ctx.fillStyle is the color of the fill
+- e represents the an Event object which is pass through to drawCircle and
+  drawRect in draw function
