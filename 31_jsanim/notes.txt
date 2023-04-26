@@ -1,0 +1,15 @@
+Team Wandering Majestic Merciful Mice:: Maya M., Wilson
+SoftDev pd2
+K31 -- canvas based JS animation
+2023-04-25m
+
+
+DISCO
+1. requestAnimationFrame(drawDot) to start animation
+2. cancelAnimationFrame(requestID) to end animation
+3. make sure to cancelAnimationFrame before requestAnimationFrame so the button effects
+won't stack
+
+QCC
+1. why does the effect stack when we click button multiple times when cancelAnimationFrame(requestID)
+is not in code?
