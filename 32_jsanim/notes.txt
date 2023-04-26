@@ -4,7 +4,7 @@ K32 -- DVD JS animation
 2023-04-26m
 
 DISCO: 
-1. For an image, the top left coordinates are 0,0
+1. For an image, the top left coordinates are (0,0)
 2. To get DVD to bounce, we need to reflect either x or y. 
 
 QCC:
