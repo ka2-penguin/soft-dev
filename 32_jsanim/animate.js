@@ -1,7 +1,7 @@
 // Team Wandering Majestic Merciful Mice:: Maya M., Wilson
 // SoftDev pd2
-// K31 -- canvas based JS animation
-// 2023-04-25m
+// K32 -- DVD JS animation
+// 2023-04-26m
 
 var c = document.getElementById("playground");
 var dotButton = document.getElementById("buttonCircle");
@@ -57,8 +57,25 @@ var dvdLogoSetup = function() {
 
     var logo = new Image();
     logo.src = "logo_dvd.jpg";
+    var dvdLogo = function() {
+        clear();
+        ctx.drawImage(logo, rectX, rectY, rectWidth, rectHeight);
+        if (rectX <= 0 || rectX >= 500-rectWidth) {
+            xVel *= -1;
+        }
+        rectX += xVel;
 
-    ctx.drawImage(logo, rectX, rectY, rectWidth, rectHeight);
+        if (rectY <= 0 || rectY >= 500-rectHeight) {
+            yVel *= -1;
+        }
+        rectY += yVel;
+        // console.log(rectX)
+        
+
+        cancelAnimationFrame(requestID);
+        requestID = requestAnimationFrame(dvdLogo);
+    }
+    dvdLogo();
 }
 
 var stopIt = () => {
@@ -66,7 +83,7 @@ var stopIt = () => {
 }
 
 
-var clear = (e) => {
+var clear = () => {
     // e.preventDefault();
     ctx.clearRect(0, 0, c.width, c.height);
 }
