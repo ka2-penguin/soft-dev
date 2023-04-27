@@ -1,0 +1,18 @@
+Team Wandering Majestic Merciful Mice:: Maya M., Wilson
+SoftDev pd2
+Spring 2023
+HTML file for exploring DOM event propogation using JavaScript
+
+DISCO:
+1. Use alerts to show pop ups
+2. Use stopPropagation to stop subsequent events from bubbling
+3. Use capture (boolean parameter) to change order of bubbling
+4. You can't change the .js file from dev console
+
+QCC: 
+1. What is the default that stopDefault refer to?
+
+Bubble/Capture: 
+
+Bubble is when events show up on the screen according to their most nested order (order in which code is written)
+Capture is when events show up on the screen according to their least nested order
